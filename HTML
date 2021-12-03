@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <button class="open-button" onclick="openForm(),regcloseForm()">Logare</button>
+
+    <button class="reg-button" onclick="regopenForm(),closeForm()">Creare cont</button>
+
+  
+    
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="text-align: center; color: #FFFFFF    ;">Login</h1>
+
+    <label for="email"> <p style="color: white;">Email:</p></label>
+    <input type="text" placeholder="student@stud.upb.ro/prof@onmicrosoft.upb.ro" name="email" required>
+
+    <label for="psw"> <p style="color: white;">Parola:</p></label>
+    <input type="password" placeholder="" name="psw" required>
+
+    <button type="submit" class="btn">Conectare</button>
+    <button type="button" class="btncancel" onclick="closeForm()"> <p style=font-size:4vwpx>X</p></button>
+
+    <p class="Cont">Nu ai cont?</p>
+    <button class="btnregister" onclick="regopenForm(),closeForm()">Înregistrează-te</button>
+
+  </form>
+</div>
+
+
+<div class="reg-popup" id="myFormreg">
+    <form action="/action_page.php" class="form-containerreg">
+      <h1 style="text-align: center; color: #FFFFFF    ;">Register</h1>
+  
+      <select class="select">
+        <option>Student</option>
+        <option>Profesor</option>
+    </select>
+
+      <label for="name"> <p style="color: white;">Nume:</p></label>
+      <input type="text"  name="name" required>
+
+      <label for="email"> <p style="color: white;">Email:</p></label>
+      <input type="text" placeholder="student@stud.upb.ro/prof@onmicrosoft.upb.ro" name="email" required>
+  
+      <label for="psw"> <p style="color: white;">Parola:</p></label>
+      <input type="password" placeholder="" name="psw" required>
+  
+      <label for="psw-repeat"><p style="color: white;">Confirmare parola:</p></label>
+      <input type="password"  name="psw-repeat" id="psw-repeat" required>
+
+      <button type="submit" class="btnreg">Inregistrare</button>
+      <button type="button" class="btncancelreg" onclick="regcloseForm(),closeForm()"> <p style=font-size:4vwpx>X</p></button>
+  
+    </form>
+  </div>
+
+
+  <script>
+    function regopenForm() {
+      document.getElementById("myFormreg").style.display = "block";
+    }
+    
+    function regcloseForm() {
+      document.getElementById("myFormreg").style.display = "none";
+    }
+    </script>
+
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+    <div id="Wholepage">
+
+    <img class="Asset6" src="Asset6.png" alt="Imaginea nu se incarca">
+
+    <img class="Image" src="image.png" alt="Imaginea nu se incarca">
+
+    <img class="Asset5" src="Asset5.png" alt="Imaginea nu se incarca">
+
+    <img class="Image2" src="Asset6.png" alt="Imaginea nu se incarca">
+
+    
+     <div id="para1">
+     <p>Învățatul nu a fost niciodată mai simplu!</p>
+
+    <p id="para2">Platforma ideală pentru meditații online, atât pentru profesori, cât si pentru studenți.
+
+    <p>
+   </div>
+    
+
+
+    <div class="Block1">
+        <div class="Block2">
+
+            <span id="para3">Cum funcționează ?</span>
+            <p id="para4">Știi prea multe si vrei să predai?
+                Înscrie-te ca profesor.</p>
+            <p id="para5">Știi prea puține si vrei să înveți?
+                Înscrie-te ca student.</p>  
+
+             
+
+             <button type="button" class="Predaubutton" onclick=""> <p style=font-size:4vwpx>Predau</p></button>
+             <button type="button" class="Invatbutton" onclick=""> <p style=font-size:4vwpx>Învăț</p></button>
+
+        </div>
+    </div>
+    </div>
+
+
+    <h3 id="Contactf">Întâmpini dificultăți ?
+      Contactează-ne!</h3>
+
+      <button class="contact-button" onclick="document.location.href = '#Contactf';">Contact</button>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">Nume</label>
+        <input type="text" id="fname" name="firstname" >
+    
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="lastname" >
+    
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject"  style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+</body>
+
+</html>
+
+    
+
+
