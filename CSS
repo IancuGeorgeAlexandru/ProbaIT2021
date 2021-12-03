@@ -1,0 +1,469 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#Wholepage {
+  margin: 0;
+}
+
+.open-button {
+  background-color: #272a45;
+  color: #ffffff;
+  font-family: Droid Sans;
+
+  font-size: 1vw;
+  position: absolute;
+  top: 20px;
+  right: 450px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+
+  z-index: 5;
+  cursor: pointer;
+}
+
+.reg-button {
+  background-color: #272a45;
+  color: #ffffff;
+  font-family: Droid Sans;
+
+  font-size: 1vw;
+
+  position: absolute;
+  top: 20px;
+  right: 250px;
+  width: 150px;
+  border-radius: 20px;
+
+  height: 50px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.contact-button {
+  background-color: #272a45;
+  color: #ffffff;
+  font-family: Droid Sans;
+
+  font-size: 1vw;
+
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 150px;
+  border-radius: 20px;
+
+  height: 50px;
+  z-index: 5;
+  cursor: pointer;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 2000;
+}
+
+.reg-popup {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 400px;
+  z-index: 2001;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  right: 300px;
+  background-color: #272a45;
+  border-radius: 20px;
+  z-index: 2000;
+}
+
+.form-containerreg {
+  width: 400px;
+  height: 750px;
+  padding: 10px;
+  position: relative;
+  right: 90px;
+  top: 0;
+
+  background-color: #272a45;
+  border-radius: 20px;
+  z-index: 2000;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-containerreg input[type="name"],
+.form-containerreg input[type="text"],
+.form-containerreg input[type="password"] {
+  width: 370px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-containerreg input[type="name"]:focus,
+.form-containerreg input[type="text"]:focus,
+.form-containerreg input[type="password"]:focus {
+  background-color: #dbdbdb;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.btn,
+.btnreg {
+  background: linear-gradient(
+    180deg,
+    #afd0ff 0%,
+    #b2eeff 99.99%,
+    rgba(175, 209, 255, 0) 100%
+  );
+  color: rgba(0, 0, 0, 1);
+  padding: 16px 20px;
+  border-radius: 30px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  height: 50px;
+  left: 25%;
+  bottom: 20px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container,
+.form-containerreg,
+.cancel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.select {
+  position: relative;
+
+  background-color: #dbdbdb;
+}
+
+.Cont {
+  position: absolute;
+  bottom: 120px;
+  left: 10px;
+  color: white;
+}
+.btnregister {
+  position: absolute;
+  bottom: 110px;
+  left: 10px;
+  color: white;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover,
+.form-containerreg,
+.btnreg:hover {
+  opacity: 1;
+}
+.btncancel,
+.btncancelreg {
+  background-color: #272a45;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+.Asset6 {
+  position: absolute;
+  transform: rotate(-180deg);
+  right: 0;
+  top: 0;
+  width: 53%;
+}
+
+.Image {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  left: 57px;
+  top: 29px;
+}
+
+.Asset5 {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 30%;
+  left: 60%;
+}
+
+#para1 {
+  position: absolute;
+  font-family: Droid Sans;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3vw;
+  text-align: left;
+  width: 30%;
+  top: 20%;
+  left: 13%;
+  height: 10vw;
+}
+
+#para2 {
+  position: absolute;
+  font-family: Droid Sans;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2vw;
+  text-align: left;
+  left: 0;
+  top: 10vw;
+}
+
+.Block1 {
+  position: absolute;
+  background: linear-gradient(180deg, #b3f3ff 0%, #aec5ff 100%);
+  height: 500px;
+  width: 70%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  top: 700px;
+  left: 13%;
+}
+
+.Block2 {
+  position: absolute;
+  background: #272a45;
+  border-radius: 40px;
+  height: 100%;
+  width: 100%;
+  top: 30px;
+  left: 4%;
+}
+
+#para3 {
+  position: absolute;
+
+  height: 56px;
+  left: 33%;
+  top: 10%;
+
+  font-family: Droid Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3vw;
+  line-height: 3vw;
+  color: #ffffff;
+  z-index: 1000;
+}
+
+#para4 {
+  position: absolute;
+  width: 40%;
+  height: 70px;
+  left: 7%;
+  top: 200px;
+
+  font-family: Droid Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 3vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+#para5 {
+  position: absolute;
+  width: 40%;
+  height: 70px;
+  right: 7%;
+  top: 200px;
+
+  font-family: Droid Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 3vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Predaubutton {
+  position: absolute;
+
+  left: 15%;
+  bottom: 10%;
+
+  font-family: Droid Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+
+  color: #000000;
+  background: linear-gradient(
+    180deg,
+    #afd0ff 0%,
+    #b2eeff 99.99%,
+    rgba(175, 209, 255, 0) 100%
+  );
+  border-radius: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.Invatbutton {
+  position: absolute;
+
+  right: 15%;
+  bottom: 10%;
+
+  font-family: Droid Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+
+  color: #000000;
+  background: linear-gradient(
+    180deg,
+    #afd0ff 0%,
+    #b2eeff 99.99%,
+    rgba(175, 209, 255, 0) 100%
+  );
+  border-radius: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background: linear-gradient(
+    180deg,
+    #afd0ff 0%,
+    #b2eeff 99.99%,
+    rgba(175, 209, 255, 0) 100%
+  );
+  color: rgba(0, 0, 0, 1);
+
+  position: relative;
+  width: 25%;
+  left: 37.5%;
+  align-items: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#Contactf {
+  width: 400px;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 1300px;
+  left: 36%;
+}
+.container {
+  border-radius: 5px;
+  width: 50%;
+  top: 1400px;
+  position: absolute;
+  align-content: center;
+  left: 25%;
+  padding-bottom: 200px;
+}
+
+.Image2 {
+  position: absolute;
+  left: 0;
+  top: 260%;
+  width: 53%;
+  z-index: 3000;
+}
+
+@media screen and (max-width: 800px) {
+  .Asset5 {
+    left: 40%;
+  }
+  .Asset6 {
+    width: 100%;
+    left: 0;
+  }
+  .Image {
+    top: 5px;
+    left: 8px;
+  }
+  #para1 {
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  .Block1 {
+    height: 200px;
+  }
+}
